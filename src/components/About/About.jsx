@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
-import AboutImg from '../Image/AboutImg';
 import Pdf from '../Pdf'
 import PortfolioContext from '../../context/context';
+import profile from '../../images/profile.png'
 
 const About = () => {
   const { about, hero } = useContext(PortfolioContext);
@@ -30,7 +30,7 @@ const About = () => {
           <Col md={4} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <img className="profile-pic rounded shadow-lg" alt={'Swapnil Patil Image'} src={profile} />
               </div>
             </Fade>
           </Col>
@@ -50,7 +50,7 @@ const About = () => {
                   {paragraphTwo ||
                     '12 years of Experience in Enterprise Web and Hybrid Mobile Applications. I am a techie and I love making cool products.'}
                 </p>
-                {resume && (
+                {/* {resume && (
                   <span className="d-flex mt-3">
                     <Pdf render={({ publicURL }) => <a
                         target="_blank"
@@ -63,7 +63,7 @@ const About = () => {
                     } />
 
                   </span>
-                )}
+                )} */}
               </div>
             </Fade>
           </Col>

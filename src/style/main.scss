@@ -16,3 +16,8 @@
 @import './sections/projects';
 
 @import './vendor/css/font-awesome.min.css';
+
+#gatsby-focus-wrapper {
+  min-height: 100vh;
+  background-color: #333333;
+}

@@ -8,14 +8,19 @@
   color: $white-color;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 10%;
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  // padding-bottom: 10%;
 
   @include respond(tab-land) {
     height: 100%;
     -webkit-clip-path: none;
     clip-path: none;
+  }
+
+  .profile-pic {
+    width: 60%;
+    align-self: flex-start;
   }
 
   .hero-title {
@@ -41,10 +46,6 @@
   }
 
   .about-wrapper {
-    @include respond(phone) {
-      padding-bottom: 5rem;
-    }
-
     &__image {
       display: flex;
       height: 100%;
