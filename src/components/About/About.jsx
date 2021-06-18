@@ -50,20 +50,6 @@ const About = () => {
                   {paragraphTwo ||
                     '12 years of Experience in Enterprise Web and Hybrid Mobile Applications. I am a techie and I love making cool products.'}
                 </p>
-                {/* {resume && (
-                  <span className="d-flex mt-3">
-                    <Pdf render={({ publicURL }) => <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--resume"
-                        href={publicURL}
-                      >
-                        Resume
-                      </a>
-                    } />
-
-                  </span>
-                )} */}
               </div>
             </Fade>
           </Col>
