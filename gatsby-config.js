@@ -20,13 +20,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pdfs`,
-        path: `${__dirname}/src/pdfs/`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Swapnil Patil Website`,
