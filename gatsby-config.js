@@ -42,7 +42,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-CEPCT7GEZL", // Google Analytics / GA
+          process.env.GTAG_ID
         ]
       },
     },
