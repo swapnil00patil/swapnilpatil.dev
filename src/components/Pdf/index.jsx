@@ -16,7 +16,6 @@ const Pdf = ({ name, render }) => {
     }
   `)
   const pdf = data.pdfs.edges.filter(({ filename }) => filename === filename)[0]
-  console.log(pdf.node)
   return (
     <>
       { pdf && render(pdf.node) }

@@ -13,15 +13,14 @@ const Professional = () => {
       <Container>
         <Fade bottom duration={1000} delay={800} distance="30px">
           <Title title={title} />
-          <Pdf render={({ publicURL }) => <a
+            <a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--hero"
-              href={publicURL}
+              href='/resume.pdf'
             >
               Resume
             </a>
-          } />
         </Fade>
       </Container>
     </section>
