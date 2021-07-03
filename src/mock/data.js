@@ -3,7 +3,7 @@ import React from 'react';
 
 // HEAD DATA
 export const headData = {
-  title: 'Swapnil Patil', // e.g: 'Name | Developer'
+  title: 'Swapnil Patil | Full Stack Developer | Singapore', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: '12 years of Experience in Enterprise Web and Hybrid Mobile Applications. I am a techie and I love making cool products.', // e.g: Welcome to my website
 };
