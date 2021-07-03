@@ -13,7 +13,8 @@ const Skills = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <Title title={title} />
           <div className="wrapper">
-            {current && current.map((skill) => <div className="cta-btn cta-btn--hero skill">{skill}</div>)}
+            {current && current.map((skill, index) => 
+              <div className="cta-btn cta-btn--hero skill" key={index}>{skill}</div>)}
           </div>
         </Fade>
       </Container>

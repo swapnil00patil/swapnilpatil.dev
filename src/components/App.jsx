@@ -7,6 +7,7 @@ import Footer from './Footer/Footer';
 import Skills from './Skills';
 import Journey from './Journey';
 import Professional from './Professional';
+import LatestArticles from './LatestArticles'
 
 import { PortfolioProvider } from '../context/context';
 
@@ -40,6 +41,7 @@ function App() {
       <About />
       <Skills />
       <Professional />
+      <LatestArticles />
       <Projects />
       <Journey />
       <Contact />

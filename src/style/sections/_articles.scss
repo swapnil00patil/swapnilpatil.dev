@@ -1,0 +1,33 @@
+#articles {
+  background-color: $dark-grey;
+  background-image: linear-gradient(
+    135deg,
+    $dark-grey 0%,
+    $dark-black 100%
+  );
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  border-bottom: 1px solid #09564a;
+
+  .article-wrapper {
+    text-align: left;
+  }
+  .article {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+    a {
+      color: #02aab0;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+    .date {
+      font-size: 12px;
+      margin-right: 10px;
+      width: 112px;
+    }
+  }
+}

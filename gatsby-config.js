@@ -39,5 +39,18 @@ module.exports = {
         ]
       },
     },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `http://localhost:9000/rss.xml`,
+        name: `AroundCode`,
+        parserOption: {
+          item: [
+            ['dc:creator', 'creator'],
+            ['content:encoded', 'content'],
+          ]
+        }
+      }
+    },
   ],
 };

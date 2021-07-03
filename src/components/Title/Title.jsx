@@ -8,8 +8,4 @@ const Title = ({ title }) => (
   </Fade>
 );
 
-Title.propTypes = {
-  title: PropTypes.string.isRequired,
-};
-
 export default Title;
