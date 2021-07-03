@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://localhost:9000/rss.xml`,
+        url: `https://www.aroundcode.io/rss.xml`,
         name: `AroundCode`,
         parserOption: {
           item: [
