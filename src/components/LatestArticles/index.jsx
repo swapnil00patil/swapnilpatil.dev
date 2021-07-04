@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 import { Container, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 
@@ -33,14 +32,10 @@ const LatestArticles = () => (
     render={((data) => <section id="articles">
       <Container>
         <Col lg={12} sm={12}>
-          <Fade
-            duration={1000}
-            delay={500}
-          >
-            <Title title="Latest Articles" />
-            <div className="article-wrapper">
+          <Title title="Latest Articles" />
+          <div className="article-wrapper">
             {
-              data.allFeedAroundCode.edges.map(({ node: { title, link, pubDate }}, index) => {
+              data.allFeedAroundCode.edges.map(({ node: { title, link, pubDate } }, index) => {
                 return <div className="article">
                   <div className="date">{formatDate(pubDate)}</div>
                   <a href={link} target="_blank">{title}</a>
@@ -48,10 +43,9 @@ const LatestArticles = () => (
               })
             }
             <div className="article">
-                <a href="https://www.aroundcode.io/" target="_blank">View more</a>
-              </div>
+              <a href="https://www.aroundcode.io/" target="_blank">View more</a>
             </div>
-          </Fade>
+          </div>
         </Col>
       </Container >
     </section>

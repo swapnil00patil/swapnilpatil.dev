@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
@@ -24,14 +23,12 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
-            <br />
-            {subtitle || "I'm the Unknown Developer."}
-          </h1>
-        </Fade>
+        <h1 className="hero-title">
+          {title || 'Hi, my name is'}{' '}
+          <span className="text-color-main">{name || 'Your Name'}</span>
+          <br />
+          {subtitle || "I'm the Unknown Developer."}
+        </h1>
       </Container>
     </section>
   );

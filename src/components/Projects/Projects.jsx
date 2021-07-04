@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -31,24 +30,17 @@ const Projects = () => {
             return (
               <Row key={id}>
                 <Col lg={12} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                  <div className="project-wrapper__text">
+                    <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                    <div>
                       <div>
-                        <div>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </div>
-                        <p className="mb-4">{info2 || ''}</p>
+                        {info ||
+                          'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                       </div>
-                      <p className="align-center">
-                        {url &&
+                      <p className="mb-4">{info2 || ''}</p>
+                    </div>
+                    <p className="align-center">
+                      {url &&
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -56,21 +48,20 @@ const Projects = () => {
                           href={url || '#!'}
                         >
                           See Live
-                        </a> }
+                        </a>}
 
-                        {repo && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cta-btn cta-btn--hero"
-                            href={repo}
-                          >
-                            Source Code
-                          </a>
-                        )}
-                      </p>
-                    </div>
-                  </Fade>
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={repo}
+                        >
+                          Source Code
+                        </a>
+                      )}
+                    </p>
+                  </div>
                 </Col>
               </Row>
             );
