@@ -70,8 +70,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title: 'Algorithms and Data Structures in Javascript',
-    info: 'Implementation of different and Algorithms, Data Structures in Javascript',
-    info2: 'Also have solutions to couple of interesting and challenging problems',
+    info: 'Implementation of different Algorithms, Data Structures and solve challenging problems involving them.',
+    info2: ' ',
     url: '',
     repo: 'https://github.com/swapnil00patil/js-algo', // if no repo, the button will not show up
   },
@@ -79,8 +79,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title: 'micro8',
-    info: 'Microservice development in Node Js, Spring Boot, Docker, Postgres and Kubernetes',
-    info2: 'Implementing different patterns, libraries for Microservice development in Node Js and Spring Boot',
+    info: 'Implementing patterns and standard practises for Microservice development in Node Js, Spring Boot, Docker, Postgres and Kubernetes',
+    info2: '',
     url: '',
     repo: 'https://github.com/swapnil00patil/micro8', // if no repo, the button will not show up
   }
