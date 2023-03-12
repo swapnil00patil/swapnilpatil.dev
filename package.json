@@ -34,8 +34,7 @@
     "react-dom": "^18.2.0",
     "react-github-btn": "^1.4.0",
     "react-helmet": "^6.1.0",
-    "react-scroll": "^1.8.9",
-    "react-tilt": "^0.1.4"
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
